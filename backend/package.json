@@ -1,0 +1,23 @@
+{
+  "name": "recipe-ie-backed",
+  "version": "1.0.0",
+  "description": "Rest API for recipes.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Express",
+    "RestAPI",
+    "MongoDB",
+    "Mongoose",
+    "Recipes"
+  ],
+  "author": "Salko Nuhanovic",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.3",
+    "mongoose": "^5.0.11"
+  }
+}
