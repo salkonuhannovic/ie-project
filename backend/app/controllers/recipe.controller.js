@@ -118,3 +118,51 @@ exports.update = (req, res) => {
             });
         });
 };
+
+exports.like = (req, res) => {  
+    // Find recipe and update it with the request body
+    Recipe.findByIdAndUpdate(req.params.recipeId, {
+        $inc: { totalLikes: 1 }
+    }, { new: true })
+        .then(recipe => {
+            if (!recipe) {
+                return res.status(404).send({
+                    message: "Recipe not found with id " + req.params.recipeId
+                });
+            }
+            res.send(recipe);
+        }).catch(err => {
+            if (err.kind === 'ObjectId') {
+                return res.status(404).send({
+                    message: "Recipe not found with id " + req.params.recipeId
+                });
+            }
+            return res.status(500).send({
+                message: "Error updating recipe with id " + req.params.recipeId
+            });
+        });
+};
+
+exports.dislike = (req, res) => {
+    // Find recipe and update it with the request body
+    Recipe.findByIdAndUpdate(req.params.recipeId, {
+        $inc: { totalLikes: -1 }
+    }, { new: true })
+        .then(recipe => {
+            if (!recipe) {
+                return res.status(404).send({
+                    message: "Recipe not found with id " + req.params.recipeId
+                });
+            }
+            res.send(recipe);
+        }).catch(err => {
+            if (err.kind === 'ObjectId') {
+                return res.status(404).send({
+                    message: "Recipe not found with id " + req.params.recipeId
+                });
+            }
+            return res.status(500).send({
+                message: "Error updating recipe with id " + req.params.recipeId
+            });
+        });
+};

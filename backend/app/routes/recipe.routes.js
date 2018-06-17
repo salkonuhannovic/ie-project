@@ -15,4 +15,7 @@ module.exports = (app) => {
 
     // Update a recipe with recipeID
     app.put('/recipes/:recipeId', recipes.update);
+
+    app.patch("/recipes/:recipeId/like", recipes.like) ;
+    app.patch("/recipes/:recipeId/dislike", recipes.dislike);
 }
