@@ -1,0 +1,16 @@
+.ingredients-box{
+    margin : 10px;
+    padding:  5px;
+    border: 1px solid black;
+}
+.ingredients-box{
+    font-family: "Sunshiney", sans-serif;
+    font-size: 1.3rem;
+}
+.ingredients-box li {
+    margin-left:5px;
+}
+.descriptionBox{
+    font-family: "Sunshiney", sans-serif;
+    font-size: 1.5rem;
+}

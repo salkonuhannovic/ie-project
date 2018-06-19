@@ -1,0 +1,27 @@
+
+.nab{
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to top, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to top, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    position:fixed;
+}
+.navItem:hover{
+    background-color: red;
+}
+.navItem a{
+    color: #fff;
+    
+    font-size: 2rem;
+    font-family: "Sunshiney", sans-serif; 
+}
+#sidenav-overlay {
+    /*react- marialize bug fix/*/
+    z-index: 996;
+  }
+ #nav-mobile{
+    background-color: #ee6e73;  
+}
+
+#nav-mobile .navItem{
+    border-bottom: solid 1px white;  
+}

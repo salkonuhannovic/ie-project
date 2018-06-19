@@ -1,0 +1,56 @@
+.like {
+    color: lightgreen;
+  }
+  
+  .dislike {
+    color: lightcoral;
+  }
+  
+  .neutral {
+    color: lightgrey;
+  }
+  
+  .like-label {
+    margin-left: 12px;
+  }
+  
+  .like-icon:hover {
+    animation: bounce 1s;
+  }
+  
+  @keyframes bounce {
+    0%, 20%, 60%, 100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+    }
+  
+    40% {
+      -webkit-transform: translateY(-7px);
+      transform: translateY(-7px);
+    }
+  
+    80% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+    }
+  }
+ .box{
+   min-height: 30px;
+ }
+ .description{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+.description{  
+  font-family: "Sunshiney", sans-serif;
+ font-size: 1.3rem;
+}
+.card-title{
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.card-image img {
+  height: 350px;
+}
