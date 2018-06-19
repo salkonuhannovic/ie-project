@@ -1,23 +1,72 @@
-# ie-project
+# Vegan Recipes
 
-Steps to Run Backend
+Vegan recipes is an application where users can view/edit and rate different recipes.
 
-1. Install dependencies
+# New Features!
 
-```bash
-npm install
+  - Like / Dislike recipes !
+  -  View and Edit recipes !
+  -  Vegan recipes is now Responsive.
+
+
+Vegan Recipes breaks down into a frontend and a backend project.
+The backend application is a REST API using MongoDB, the frontend is a webapplication using react.js and offering the UI for browsing recipes.
+
+
+### Tech
+
+Vegan Recipes uses a number of open source projects to work properly:
+
+* [ReactJS] - as javascript libary
+* [react-materialize] - for fancy UI components
+* [node.js] - evented I/O for the backend
+* [Express] - as http server
+* [npm] - for building and loading dependencies
+* [mongoose] - to interact with MongoDB
+* [axios] - promise based http client
+
+
+
+### Installation
+
+Vegan Recipes requires node.js, npm and mongoDB.
+
+Install the dependencies in frontend and backend folder.
+
+```sh
+$ cd frontend
+$ npm install
+```
+```sh
+$ cd backend
+$ npm install
 ```
 
-3. Run MongoDB
+And than run the applications:
 
-```bash
-mongod
+Backend
+```sh
+$ mongod
+$ node server.js
 ```
 
-3. Run Server
-
-```bash
-node server.js
+Frontend
+```sh
+$ npm start
 ```
 
-4. Enjoy browsing the API <http://localhost:3000> :-)
+
+### Todos
+
+ - Write tests
+ - Add security concept
+
+
+
+   [node.js]: <http://nodejs.org>
+   [express]: <http://expressjs.com>
+   [ReactJS]: <https://reactjs.org/>
+   [npm]: <https://www.npmjs.com/>
+   [mongoose]: <http://mongoosejs.com/>
+   [axios]: <https://github.com/axios/axios>
+   [react-materialize]: <https://react-materialize.github.io/#/>
